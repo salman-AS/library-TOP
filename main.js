@@ -7,11 +7,11 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
-Book.prototype.toggleRead = function(){
+Book.prototype.toggleRead = function () {
     this.read = !this.read;
 }
 
-function toggle(index){
+function toggle(index) {
     myLibrary[index].toggleRead();
     render();
 }
@@ -19,7 +19,7 @@ function toggle(index){
 function render() {
     let libraryEl = document.querySelector("#library");
     libraryEl.innerHTML = "";
-    for (let i=0; i<myLibrary.length;i++) {
+    for (let i = 0; i < myLibrary.length; i++) {
         let book = myLibrary[i];
         let bookEl = document.createElement("div");
         bookEl.innerHTML = `
@@ -27,7 +27,7 @@ function render() {
             <h3>${book.title}</h3>
             <h5>AUTHOR:${book.author}</h5>
             <h5>PAGES: ${book.pages}</h5>
-            <h5>Completed: ${book.read? "Yes": "No"}</h5>
+            <h5>Completed: ${book.read ? "Yes" : "No"}</h5>
             <div>
                 <button class="remove" onclick="removeBook(${i})">Remove</button>
                 <button class="toggle" onclick="toggle(${i})">Toggle</button>
@@ -38,8 +38,8 @@ function render() {
     }
 }
 
-function removeBook(index){
-    myLibrary.splice(index,1);
+function removeBook(index) {
+    myLibrary.splice(index, 1);
     render();
 }
 
