@@ -22,7 +22,6 @@ header {
     align-items: center;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.6);
 
-
     h1 {
         font-size: 2.5em;
     }
@@ -45,20 +44,24 @@ header {
     background: linear-gradient(to right, #cab819, #70e033);
     background-color: #cab819;
     color: #000000;
-    font-size: 1.5em;
-    width: 7em;
-    margin: 0.7em;
-    padding: 16px;
-    align-self: center;
+    font-size: 2.5em;
+    width: 1.3em;
+    height: 1.3em;
+    text-align: center;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
     border: 0px solid #000;
     border-radius: 50px;
     display: inline-block;
     box-shadow: 0px 0px 10px 0px #2D2D2D;
+    transition: 0.3s;
 }
 
 #addBook:hover {
     background: linear-gradient(to right, #c0af18, #6ad530);
     background-color: #c0af18;
+    transform: translateY(-3px);
 }
 
 #addBook:active {
@@ -123,7 +126,7 @@ form>input {
     gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0em 10em;
+    margin: 2em 10em;
 
     .card {
         box-shadow: 0px 0px 4px rgba(66, 66, 66, .60);
