@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Library</h1>
+        <div>By <a href="https://github.com/salman-AS">salman-AS</a></div>
+    </header>
+    <button id="addBook">Add Book</button>
+    <dialog>
+        <div>
+            <div class="close">X</div>
+            <form id="newBookForm">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author">
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages">
+                </div>
+                <div class="read">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read">
+                </div>
+                <input id="formSubmit" type="submit" value="Submit">
+            </form>
+        </div>
+    </dialog>
+    <div id="library"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

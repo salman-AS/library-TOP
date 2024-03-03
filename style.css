@@ -1,0 +1,160 @@
+.cousine-regular {
+    font-family: "Cousine", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Cousine", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    height: 5em;
+    padding: 0em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.6);
+
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    div {
+        color: rgb(105, 105, 105);
+
+        a {
+            color: rgb(105, 105, 105);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+#addBook {
+    background: linear-gradient(to right, #cab819, #70e033);
+    background-color: #cab819;
+    color: #000000;
+    font-size: 1.5em;
+    width: 7em;
+    margin: 0.7em;
+    padding: 16px;
+    align-self: center;
+    border: 0px solid #000;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 0px #2D2D2D;
+}
+
+#addBook:hover {
+    background: linear-gradient(to right, #c0af18, #6ad530);
+    background-color: #c0af18;
+}
+
+#addBook:active {
+    transform: scale(0.95);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    .read{
+        justify-content: center;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+            padding: 3px;
+            margin: 3px;
+        }
+    }
+}
+
+dialog>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.close {
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+input[type='text'],
+input[type='number'] {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px rgba(66, 66, 66, .60);
+    text-shadow: 0px 0px 2px rgba(66, 66, 66, .75);
+}
+
+form>input{
+    width: 5em;
+    align-self: center;
+}
+
+#library{
+    align-self: center;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0em 10em;
+    .card{
+        box-shadow: 0px 0px 4px rgba(66, 66, 66, .60);
+        width: 10em;
+        height: 9em;
+        padding: 0 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+        border-radius: 10px;
+        font-size: 1.3em;
+        h3,h5{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            align-self: center;
+            background-color: #6b6b6b3a;
+            width: 110%;
+            text-align: center;
+        }
+        h5{
+            font-weight: 500;
+        }
+        button{
+            width: 5em;
+            align-self: center;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            .remove, .toggle{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
